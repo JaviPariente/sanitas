@@ -70,7 +70,11 @@ public class DatosEnvioMail
     implements Serializable
 {
 
-    @XmlElement(nillable = true)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@XmlElement(nillable = true)
     protected List<FicheroAdjunto> adjuntos;
     protected String asunto;
     protected String dias;

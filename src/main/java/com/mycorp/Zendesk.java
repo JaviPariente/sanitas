@@ -133,7 +133,7 @@ public class Zendesk implements Closeable {
         return response.getStatusCode() == 429;
     }
 
-    protected <T> ZendeskAsyncCompletionHandler<T> handle(final Class<T> clazz, final String name, final Class... typeParams) {
+    protected <T> ZendeskAsyncCompletionHandler<T> handle(final Class<T> clazz, final String name, final Class<?>... typeParams) {
         return new BasicAsyncCompletionHandler<T>(clazz, name, typeParams);
     }
 
@@ -141,9 +141,9 @@ public class Zendesk implements Closeable {
     private class BasicAsyncCompletionHandler<T> extends ZendeskAsyncCompletionHandler<T> {
         private final Class<T> clazz;
         private final String name;
-        private final Class[] typeParams;
+        private final Class<?>[] typeParams;
 
-        public BasicAsyncCompletionHandler(Class clazz, String name, Class... typeParams) {
+        public BasicAsyncCompletionHandler(Class<T> clazz, String name, Class<?>... typeParams) {
             this.clazz = clazz;
             this.name = name;
             this.typeParams = typeParams;

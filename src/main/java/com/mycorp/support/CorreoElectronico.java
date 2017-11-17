@@ -5,7 +5,12 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
 public class CorreoElectronico extends DatosEnvioMail {
-    /** Contruye un objeto {@link CorreoElectronico} a partir de los parÃ¡metros recibidos. */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/** Contruye un objeto {@link CorreoElectronico} a partir de los parÃ¡metros recibidos. */
     public CorreoElectronico( long idFuncionalidad, String idioma, List< String > params ) {
         this.funcionalidad = ( int )idFuncionalidad;
         this.idioma = idioma;

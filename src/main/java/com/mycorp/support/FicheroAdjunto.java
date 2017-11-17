@@ -36,7 +36,11 @@ public class FicheroAdjunto
     implements Serializable
 {
 
-    protected byte[] contenido;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	protected byte[] contenido;
     protected String nombre;
 
     /**
