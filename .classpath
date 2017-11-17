@@ -24,5 +24,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/sanitas/bravo/clientes/sportalclientesweb/1.19.0/sportalclientesweb-1.19.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
